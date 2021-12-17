@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Transaction({ transaction }) {
 
@@ -7,7 +7,7 @@ function Transaction({ transaction }) {
     return (
         <div>
         <li className="minus">
-          {transaction.text} <span>{sign}${transaction.amount}</span><button class="delete-btn">x</button>
+          {transaction.text} <span>{sign}${Math.abs(transaction.amount)}</span><button class="delete-btn">x</button>
         </li>
         </div>
     )
