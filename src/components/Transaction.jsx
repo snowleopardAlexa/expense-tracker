@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Transaction() {
+function Transaction({ transaction }) {
     return (
         <div>
         <li className="minus">
